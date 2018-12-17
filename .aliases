@@ -3,14 +3,12 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-# alias c="cd ~/Code"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -33,6 +31,16 @@ alias gc='git commit'
 alias gl='git pull '
 alias gco='git checkout'
 alias gb='git branch'
+
+# Dotfiles management
+alias d='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias ds='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status -sb'
+alias dga='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add '
+alias dgp='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME push '
+alias dgc='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit'
+alias dgl='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME pull '
+alias dgco='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout'
+alias dgb='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME branch'
 
 # Reindex spotlight
 alias reindex="sudo mdutil -i on /"
