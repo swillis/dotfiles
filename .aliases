@@ -32,6 +32,9 @@ alias gl='git pull '
 alias gco='git checkout'
 alias gb='git branch'
 
+# PostGres
+alias startpg='pg_ctl -D /usr/local/var/postgres start'
+
 # Dotfiles management
 alias d='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ds='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status -sb'

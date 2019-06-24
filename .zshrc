@@ -105,3 +105,7 @@ fpath=(~/functions $fpath)
 autoload -U functions/*(:t)
 
 autoload -U compinit && compinit &&
+
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
+
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
